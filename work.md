@@ -5,7 +5,6 @@ layout: default
 
 <div class="layout">
 
-  <!--<img src="/resources/images/work_empty.png" class="work_banner picture below">-->
   <img src="/resources/images/work.png" class="work_banner picture">
 
   <img src="/resources/images/work/cbs.png" class="picture">
@@ -15,6 +14,25 @@ layout: default
   <h3 class="work">
     I worked as a Java Developer Intern at CBS Lebanon over the summer of 2019. I also worked as a Freelance Brand and UI Designer for them where I got to rework lots of the brand, from redesigning the color pallete and logos to rebuilding their website from the ground up.
   </h3>
+
+  <div class="work hidden_desc" id="cbs_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript & jQuery</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform</h2>
+      <ul>
+        <li>Web (Responsive)</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #F5A623;" data-for-id="cbs_extra" class="more_info_button">Show Technical Information</a></p>
 
   <p class="work">
     go to <a target="\_blank" href="http://cbs.com.lb" style="color: #F5A623;">cbs.com.lb</a>
@@ -30,6 +48,25 @@ layout: default
     My passion for interdisciplinary technology and making a change got me to join the Assistive Technology group at MIT where I get to help plan lots of events and hackathons. I also employed my design skills to redesign the logo, website and work as an outreach personnel where I got to design merchandise (shirts, hats, etc.) and marketing resources (pamphlets and posters). Getting to work with the AT team to see hackers build awesome tech for Co-Designers from the community is one of my favorite things at MIT.
   </h3>
 
+  <div class="work hidden_desc" id="at_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript & jQuery</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform</h2>
+      <ul>
+        <li>Web (Responsive)</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #FF6699;" data-for-id="at_extra" class="more_info_button">Show Technical Information</a></p>
+
   <p class="work">
     go to <a target="\_blank" href="http://assistivetech.mit.edu" style="color: #FF6699;">assistivetech.mit.edu</a>
   </p>
@@ -43,6 +80,27 @@ layout: default
   <h3 class="work">
     I thank my curiosity for joining The Tech. I wouldn't have ever thought of working at a newspaper, but here I am! It's one of the most unique experiences, being able to get together with people from so many different backgrounds and help implement features that easen their jobs while writing articles in the CMS. My job at The Tech helped me build essential skills in studying user workflows to enhance their experience. I also love maintaining the website where most people around campus get their information from.
   </h3>
+
+  <div class="work hidden_desc" id="thetech_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Ruby</li>
+        <li>CoffeeScript</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>HAML & SCSS</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform</h2>
+      <ul>
+        <li>Web (Responsive)</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #993333;" data-for-id="thetech_extra" class="more_info_button">Show Technical Information</a></p>
 
   <p class="work">
     go to <a target="\_blank" href="http://thetech.com" style="color: #993333;">thetech.com</a>
@@ -58,6 +116,34 @@ layout: default
     FlipLearn was one of my favorite cross-platform* apps to build. It was centered around converting any school into a digital learning school (without any infrastructure changes), where teachers, students, parents and admins all used the same platform to communicate, check attendance, create quizzes, share the teacher's whiteboard and literally everything else. From buying food from the cafeteria to scanning quizzes and having them corrected automatically, FlipLearn does everything a school needs! One of my favorite things about the platform was working on inclusive UI for all ages and implementing AI throughout to perform complex functions that make teachers jobs way easier.
   </h3>
 
+  <div class="work hidden_desc" id="fliplearn_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Swift</li>
+        <li>Objective-C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript & jQuery</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform*</h2>
+      <ul>
+        <li>Web (Responsive)</li>
+        <li>iOS - iPhone & iPad App</li>
+        <li>iOS - iPad Only App</li>
+        <li>Android</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #00DEFF;" data-for-id="fliplearn_extra" class="more_info_button">Show Technical Information</a></p>
+
+  <p class="work"></p>
+
   <h3 class="note">the platform included a web-app for everyone, an iPad App for Students and both an Android and an iOS app for Teachers and Parents.</h3>
 
   <div class="separator"></div>
@@ -69,6 +155,27 @@ layout: default
   <h3 class="work">
     While exploring the idea of integrating technology with learning, I found myself stumbling across AR (Augmented Reality), helping me merge the physical world and the learning experience without having the limitations of doing so. One of my projects was a space exploration app which used 3D models based on information gathered from NASA to help kids of all ages<span style="user-select: none;"> <span style="text-decoration: line-through; color: red;">study</span></span> <span style="color: green">learn while exploring</span> planets, galaxies and the cosmos. The app featured a kid friendly game-like UI and relied heavily on integrating scientifically accurate 3D models into the real world through the camera.
   </h3>
+
+  <div class="work hidden_desc" id="space_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Swift</li>
+        <li>Objective-C</li>
+        <li>C++</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform</h2>
+      <ul>
+        <li>iOS</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #4CD964;" data-for-id="space_extra" class="more_info_button">Show Technical Information</a></p>
+
+  <p class="work"></p>
 
   <div class="separator" id="aus"></div>
 
@@ -85,6 +192,29 @@ layout: default
       <li>Restores hearing to deaf people.</li>
     </ol>
   </h3>
+
+  <div class="work hidden_desc" id="space_extra">
+    <div class="col">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>C++</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Platform</h2>
+      <ul>
+        <li>Laptop</li>
+        <li>Raspberry Pi</li>
+        <li>Ardiuno</li>
+        <li>Circuits</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="work more_info"><a style="color: #FF7E7A;" data-for-id="space_extra" class="more_info_button">Show Technical Information</a></p>
+
+  <p class="work"></p>
 
   <h3 class="note">All of the included technology (excluding the glasses frame) cost less than $6 to build.</h3>
 
@@ -117,5 +247,9 @@ layout: default
   <h3 class="work">
     LIPSUM
   </h3>
+
+
+
+  <script src="/resources/js/work.js"></script>
 
 </div>
