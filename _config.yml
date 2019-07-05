@@ -1,3 +1,12 @@
+# Site Settings
+title: Tareq Dandachi
+email: tareqdandachi@gmail.com
+description: >
+  Tareq Dandachi's Portfolio & Work.
+baseurl: ''
+url: 'tareqdandachi.github.io'
+twitter_username: tareqdandachi
+github_username: tareqdandachi
 theme: jekyll-theme-slate
 plugins:
   - jekyll-seo-tag
