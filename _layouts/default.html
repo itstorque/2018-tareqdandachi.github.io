@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="google-site-verification" content="f-y-ZFKp9GWsBxWzsAdEHEUtW0qn-7nb5An3KHLX638" />
+
+{%- include head.html -%}
+
+</head>
+
+<!--FIXME: ADD NOSCRIPT TAG SUPPORT-->
+
+<body class="landing">
+
+  <div id="main">
+
+    <nav id="navbar">
+
+      <a class="logo" href="/"></a>
+
+      <ul>
+        <a href="/"><span {% if page.title == "Home" %}class="selected"{% endif %}>About</span></a>
+        <a href="/work"><span {% if page.title == "Work" %}class="selected"{% endif %}>Work</span></a>
+        <a href="/persona"><span {% if page.title == "Persona" %}class="selected"{% endif %}>Persona</span></a>
+      </ul>
+
+    </nav>
+
+    <div id="main_content">
+
+      {{ content }}
+
+    </div>
+
+    <div id="contact" class="layout">
+
+      <div class="separator"></div>
+
+      <div id="background-1"></div>
+      <div id="background-2"></div>
+
+      <h2 class="pretitle">Contact Me</h2>
+      <h2 class="huge">
+        Hit me up, I won’t <span class="pop">bite</span>!
+      </h2>
+
+      <center class="block">
+        <a class="button" href="mailto:tareqdandachi@gmail.com" id="email_button">
+          Shoot me an Email
+        </a>
+        <p class="button_or">or</p>
+        <a class="button" href="https://m.me/tdandachi" target="_blank" id="dm_button">
+          Slide in my DM's
+        </a>
+      </center>
+
+      <script src="/resources/js/contact.js"></script>
+
+    </div>
+
+    <footer>
+      TAREQ DANDACHI © 2019
+    </footer>
+
+    </div> <!--CLOSES MAIN-->
+
+</body>
+</html>
