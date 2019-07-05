@@ -143,9 +143,9 @@ THE JS menubar.js ADDS CLASSES WHEN SCROLLED
 
   padding: 5px 0.75em;
 
-  -moz-box-shadow: inset 0px 0px 0px 0px black;
-  -webkit-box-shadow: inset 0px 0px 0px 0px black;
-  box-shadow: inset 0px 0px 0px 0px black;
+  -moz-box-shadow: inset 0px 0px 0px 0px var(--pop);
+  -webkit-box-shadow: inset 0px 0px 0px 0px var(--pop);
+  box-shadow: inset 0px 0px 0px 0px var(--pop);
 
   transition: 0.3s ease;
 
@@ -160,7 +160,7 @@ THE JS menubar.js ADDS CLASSES WHEN SCROLLED
 @keyframes navbar_selection {
 
   from {-moz-box-shadow: inset 300px 0px 0px 0px var(--pop); -webkit-box-shadow: inset 300px 0px 0px 0px var(--pop); box-shadow: inset 300px 0px 0px 0px var(--pop); color: white;}
-  to   {box-shadow: inset 000px 0px 0px 0px var(--pop); color: black;}
+  to   {box-shadow: inset 0px 0px 0px 0px var(--pop); -webkit-box-shadow: inset 0px 0px 0px 0px var(--pop); box-shadow: inset 0px 0px 0px 0px var(--pop); color: black;}
 
 }
 
@@ -311,6 +311,26 @@ h3.note::before {
 
 }
 
+h3.caption {
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  display: block;
+
+  margin: 0;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: #414244;
+
+}
+
 img.portrait {
 
   width: 80%;
@@ -353,6 +373,26 @@ img.work_banner.below {
   left: 0;
 
   transition: 0s;
+
+}
+
+img.fill_up {
+
+  object-fit: cover;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+h3.fill_up {
+
+  width: 90%;
+  margin: 40px 5% 40px 5%;
+
+  font-weight: 400;
+
+  text-align: justify;
 
 }
 
@@ -1188,6 +1228,12 @@ tr > td:last-of-type {
 
   }
 
+  h3.fill_up {
+
+    font-size: 1em;
+
+  }
+
   p.work {
 
     font-size: 0.8em;
@@ -1283,6 +1329,16 @@ tr > td:last-of-type {
     padding-right: 10%;
 
     text-align: left;
+    font-size: 0.6em;
+
+  }
+
+  h3.caption {
+
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+
     font-size: 0.6em;
 
   }
