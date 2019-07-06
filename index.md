@@ -10,7 +10,7 @@ layout: default
   <h3 class="huge title dark slideInFromLeft">I am a Full-Stack Developer, UI-Designer and a Biomechatronics Engineer. I am currently a student at MIT, majoring in Electrical Engineering, Computer Science and Mechanical Engineering with a concentration in Biomechanics and Biomedical Devices.</h3>
 
   <div class="right_align">
-    <a target="\_blank" href="/uploads/resume.pdf" class="tight"><span class="highlight_on_hover white"><i class="material-icons" style="transform: translateY(2px);">file_copy</i> Download my resume</span></a>
+    <a target="\_blank" href="/uploads/resume.pdf" class="tight"><span class="highlight_on_hover white"><img src="/resources/images/file.svg"> Download my resume</span></a>
   </div>
 
 </div>
@@ -31,7 +31,7 @@ layout: default
     I am a high-spirited, curious sophomore at MIT, which attracts me to not only participate in, but also organise lots of hackathons. My passion for tinkering around always leads me to foolishly try unexplored challenging ideas. It also makes me a huge proponent of using interdisciplinary approaches to solve problems, thereby my choice of majors. The idea of integrating different fields of study appeals to my curiosity and drives me to think out of the 📦.
   </h3>
 
-  <img src="/resources/images/dome.jpeg" class="picture">
+  {%- include picture.html img="dome" alt="MIT Dome as seen from Killian Court." -%}
 
   <div class="separator"></div>
 
@@ -57,10 +57,10 @@ layout: default
 
   <div class="experience_grid">
 
-    <div class="subject" style="background-image: url('/resources/images/test2.jpg')">Electrical Engineering</div>
-    <div class="subject" style="background-image: url('/resources/images/test3.jpg')">Computer Science</div>
-    <div class="subject" style="background-image: url('/resources/images/test4.jpg')">Biomechanics and Biomedical Devices</div>
-    <div class="subject" style="background-image: url('/resources/images/test.jpg')">Design</div>
+    <div class="subject ee">Electrical Engineering</div>
+    <div class="subject cs">Computer Science</div>
+    <div class="subject bio">Biomechanics and Biomedical Devices</div>
+    <div class="subject design">Design</div>
 
   </div>
 

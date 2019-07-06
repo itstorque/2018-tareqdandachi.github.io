@@ -535,6 +535,30 @@ div.experience_grid .subject {
 
 }
 
+div.experience_grid .subject.design {
+
+  background-image: url('/resources/images/experience/design_bg_640.jpg');
+
+}
+
+div.experience_grid .subject.bio {
+
+  background-image: url('/resources/images/experience/bio_bg_640.jpg');
+
+}
+
+div.experience_grid .subject.cs {
+
+  background-image: url('/resources/images/experience/cs_bg_640.jpg');
+
+}
+
+div.experience_grid .subject.ee {
+
+  background-image: url('/resources/images/experience/ee_bg_640.jpg');
+
+}
+
 a.button {
 
   width: 250px;
@@ -1417,8 +1441,8 @@ tr > td:last-of-type {
 
   div.experience_grid .subject {
 
-    min-height: 0px;
-    height: 25vw;
+    min-height: auto;
+    height: 350px;
 
     padding: 0 20px;
 
@@ -1435,10 +1459,6 @@ tr > td:last-of-type {
   }
 
   div.experience_grid .subject:hover {
-
-    /* -moz-box-shadow: 15vw 15vw 0px var(--pop) inset, -15vw -15vw 0px var(--pop) inset;
-		-webkit-box-shadow: 15vw 15vw 0px var(--pop) inset, -15vw -15vw 0px var(--pop) inset;
-		box-shadow: 15vw 15vw 0px var(--pop) inset, -15vw -15vw 0px var(--pop) inset; */
 
     -moz-box-shadow: 15px 15px 0px var(--pop) inset, -15px -15px 0px var(--pop) inset;
 		-webkit-box-shadow: 15px 15px 0px var(--pop) inset, -15px -15px 0px var(--pop) inset;

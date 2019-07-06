@@ -8,7 +8,7 @@ layout: default
   <h2 class="pretitle" style="margin-top: 50px;">My Life</h2>
   <h2 class="huge title">Behind the Scenes</h2>
 
-  <img src="/resources/images/persona/safetythird.jpg" class="fill_up picture">
+  {%- include picture.html img="persona/safetythird" alt="Residents of SafetyThird annual picture." extra_class="fill_up" -%}
 
   <h3 class="caption">Safety Third - 2019</h3>
 
@@ -18,7 +18,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/persona/nature.jpg" class="fill_up picture">
+  {%- include picture.html img="persona/nature" alt="A picture of trees in a field in front of a mountain and a bridge on the right side." extra_class="fill_up" -%}
 
   <h3 class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
@@ -28,7 +28,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/persona/nyhack.jpg" class="fill_up picture">
+  {%- include picture.html img="persona/nyhack" alt="A picture of trees in a field in front of a mountain and a bridge on the right side." extra_class="fill_up" -%}
 
   <h3 class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 

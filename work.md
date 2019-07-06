@@ -5,9 +5,9 @@ layout: default
 
 <div class="layout">
 
-  <img src="/resources/images/work.png" class="work_banner picture">
+  {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
-  <img src="/resources/images/work/cbs.png" class="picture">
+  {%- include picture.html img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
 
   <h3 class="pretitle">Project for CBS — 2019</h3>
 
@@ -40,7 +40,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/at.png" class="picture">
+  {%- include picture.html img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
 
   <h3 class="pretitle">Assistive Technology MIT — 2018-2019</h3>
 
@@ -73,7 +73,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/thetech.png" class="picture">
+  {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
   <h3 class="pretitle">The Tech MIT — 2018-2019</h3>
 
@@ -108,7 +108,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/fliplearn.png" class="picture">
+  {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
   <h3 class="pretitle">FlipLearn — 2018</h3>
 
@@ -148,7 +148,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/space.png" class="picture">
+  {%- include picture.html img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
 
   <h3 class="pretitle">Augmented Reality and Education - 2019</h3>
 
@@ -179,9 +179,7 @@ layout: default
 
   <div class="separator" id="aus"></div>
 
-  <!--<h2 class="huge section_title">Biomechatronics Projects</h2>-->
-
-  <img src="/resources/images/work/aus.png" class="picture">
+  {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
   <h3 class="pretitle">Multi-Purpose Assistive Glasses - 2018</h3>
 
@@ -220,7 +218,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/vmas.png" class="picture">
+  {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
   <h3 class="pretitle">Vestibular Migraine Auditory Suppressant (VMAS) - 2018</h3>
 
@@ -230,7 +228,7 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/roboarm.png" class="picture">
+  {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
   <h3 class="pretitle">Unintrusive Bionic Arm — 2017-2018</h3>
 
@@ -240,9 +238,9 @@ layout: default
 
   <div class="separator"></div>
 
-  <img src="/resources/images/work/airsurface.png" class="picture">
+  {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 
-  <h3 class="pretitle">LOREM IPSUM — 2017</h3>
+  <h3 class="pretitle">Air Surface — 2017</h3>
 
   <h3 class="work">
     LIPSUM

@@ -8,10 +8,10 @@ url: 'tareqdandachi.github.io'
 twitter_username: tareqdandachi
 github_username: tareqdandachi
 theme: jekyll-theme-slate
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
 
 github: [metadata]
 encoding: UTF-8
