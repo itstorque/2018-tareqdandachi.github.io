@@ -4,7 +4,7 @@ email: tareqdandachi@gmail.com
 description: >
   Tareq Dandachi's Portfolio & Work. UI Designer, Electrical Engineer, Computer Scientist and a Biomechatronics Engineer.
 baseurl: ''
-url: 'tareqdandachi.github.io'
+url: 'https://tareqdandachi.github.io'
 twitter_username: tareqdandachi
 github_username: tareqdandachi
 theme: jekyll-theme-slate
