@@ -328,7 +328,8 @@ h3.caption {
 img.portrait {
 
   width: 80%;
-  max-height: 80vh;
+  height: 80vh;
+  max-height: 700px;
 
   margin: 7vh 10%;
 
