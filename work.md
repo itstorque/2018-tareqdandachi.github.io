@@ -18,7 +18,24 @@ script:
     <option value="bio">Biomedical</option>
   </select>
 
-  <div id="cbs" data-tags="ui web java php js design intern cs">
+  <label for="lang">Language</label>
+  <select id="lang">
+    <option value="">any</option>
+    <option value="py">Python</option>
+    <option value="cpp">C++</option>
+    <option value="objc">Objective-C</option>
+    <option value="swift">Swift</option>
+    <option value="as">AppleScript</option>
+    <option value="java">Java</option>
+    <option value="php">PHP</option>
+    <option value="js">JavaScript</option>
+    <option value="ruby">Ruby</option>
+    <option value="coffee">CoffeeScript</option>
+  </select>
+
+  <p id="submit-query">Filter</p>
+
+  <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 
     {%- include picture.html img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
 
@@ -55,7 +72,7 @@ script:
 
   </div>
 
-  <div id="at" data-tags="bio ui web php js cs design">
+  <div id="at" class="work-item" data-tags="bio ui web php js cs design">
 
     {%- include picture.html img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
 
@@ -92,7 +109,7 @@ script:
 
   </div>
 
-  <div id="nyhack" data-tags="hackathon bio ai app cs">
+  <div id="nyhack" class="work-item" data-tags="hackathon bio ai app cs">
 
     {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
 
@@ -125,7 +142,7 @@ script:
 
   </div>
 
-  <div id="thetech" data-tags="ruby coffee js haml ui web cs design">
+  <div id="thetech" class="work-item" data-tags="ruby coffee js haml ui web cs design">
 
     {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
@@ -164,7 +181,7 @@ script:
 
   </div>
 
-  <div id="fliplearn" data-tags="ai ui web app vision edu cs design">
+  <div id="fliplearn" class="work-item" data-tags="ai ui web app vision edu cs design">
 
     {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
@@ -208,7 +225,7 @@ script:
 
   </div>
 
-  <div id="space" data-tags="ar ai ui app vision edu swift cpp objc cs design">
+  <div id="space" class="work-item" data-tags="ar ai ui app vision edu swift cpp objc cs design">
 
     {%- include picture.html img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
 
@@ -243,7 +260,7 @@ script:
 
   </div>
 
-  <div id="aus" data-tags="bio ee py cpp cs">
+  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc">
 
     {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
@@ -262,6 +279,7 @@ script:
         <h2>Programming Languages</h2>
         <ul>
           <li>Python</li>
+          <li>Objective-C</li>
           <li>C++</li>
           <li>AppleScript</li>
         </ul>
@@ -287,7 +305,7 @@ script:
 
   </div>
 
-  <div id="vmas" data-tags="bio ee py ai cpp cs">
+  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs">
 
     {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
@@ -322,7 +340,7 @@ script:
 
   </div>
 
-  <div id="roboarm" data-tags="bio ee py ai robot cpp cs">
+  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs">
 
     {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
@@ -358,7 +376,7 @@ script:
 
   </div>
 
-  <div id="airsurface" data-tags="py ai swift objc cpp cs">
+  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as">
 
     {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 
