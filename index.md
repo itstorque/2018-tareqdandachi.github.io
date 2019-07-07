@@ -33,7 +33,7 @@ script: lazy
 
   <h3 class="pretitle">Life At The Institute</h3>
   <h3 class="huge photo_paragraph">
-    I am a high-spirited, curious sophomore at MIT, which attracts me to not only participate in, but also organise lots of hackathons. My passion for tinkering around always leads me to foolishly try unexplored challenging ideas. It also makes me a huge proponent of using interdisciplinary approaches to solve problems, thereby my choice of majors. The idea of integrating different fields of study appeals to my curiosity and drives me to think out of the 📦.
+    I am a high-spirited, curious sophomore at MIT, which attracts me to not only participate in, but also organise lots of hackathons. My passion for tinkering around always leads me to foolishly try unexplored challenging ideas. It also makes me a huge proponent of using interdisciplinary approaches to solve problems, thereby my choice of majors. The idea of integrating different fields of study appeals to my curiosity and drives me to think out of the <img src="/resources/images/package.jpg" class="emoji">.
   </h3>
 
   {%- include picture_lazy.html img="dome" alt="MIT Dome as seen from Killian Court." -%}

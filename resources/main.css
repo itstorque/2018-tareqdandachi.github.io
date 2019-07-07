@@ -390,6 +390,15 @@ img.fill_up {
 
 }
 
+img.emoji {
+
+  height: 1em;
+  
+  padding-left: 0.2em;
+  padding-right: 0.15em;
+
+}
+
 h3.fill_up {
 
   width: 90%;
