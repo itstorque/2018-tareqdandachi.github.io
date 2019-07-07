@@ -1,4 +1,4 @@
-<a href="https://tareqdandachi.github.io"><img src="![alt text](https://raw.githubusercontent.com/tareqdandachi/tareqdandachi.github.io/master/resources/logos/logoSq.png)"></a>
+<a href="https://tareqdandachi.github.io" style="font-size: 48px;"><img src="https://tareqdandachi.github.io/resources/logos/logoSq.png" width="50px" style=""></a>
 
 # tareqdandachi.github.io
-> Portfolio Webpage
+> Tareq Dandachi's Portfolio Webpage
