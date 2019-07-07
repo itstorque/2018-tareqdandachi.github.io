@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+
   var lazyloadImages = document.querySelectorAll("img.lazy");
   var lazyloadphoneImages = document.querySelectorAll("img.lazy.lazy-phone");
   var lazyloadThrottleTimeout;
@@ -55,5 +55,3 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("orientationChange", lazyload);
 
   if ($(window).height() > 630 || $(window).width() > 1000) { lazyload_onload(); }
-
-});
