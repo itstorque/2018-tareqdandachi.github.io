@@ -477,6 +477,13 @@ ul li h4 {
 
 }
 
+ul li h3 .date::before {
+
+  content: " – ";
+  padding-left: 0.25em;
+
+}
+
 ul li a {
 
   color: var(--pop);
@@ -1386,13 +1393,6 @@ tr > td:last-of-type {
     font-size: 0.6em;
 
     color: grey;
-
-  }
-
-  ul li h3 .date::before {
-
-    content: " – ";
-    padding-left: 10px;
 
   }
 

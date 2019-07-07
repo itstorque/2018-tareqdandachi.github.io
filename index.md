@@ -52,7 +52,7 @@ script: lazy
 
     <li><h3>Abu Dhabi Awards<span class="date">2018</span></h3><h4>Finalist</h4> <p>Nominated for the effects of my work (in biotechnology, artificial intelligence and robotics) on the UAE community.</p></li>
 
-    <li><h3>World Robotics Olympiad<span class="date">2016</span></h3><h4>First Place - U.A.E.</h4> <p>First place on the Open Category for school students, second including all age categories.</p></li>
+    <li><h3>World Robotics Olympiad<span class="date">2014</span></h3><h4>First Place - U.A.E.</h4> <p>First place on the Open Category for school students, second including all age categories.</p></li>
 
   </ul>
 
