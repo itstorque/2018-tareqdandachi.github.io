@@ -246,7 +246,7 @@ script:
   <h3 class="pretitle">Air Surface — 2017</h3>
 
   <h3 class="work">
-    LIPSUM
+    One of my projects on Human-Computer Interfaces, blending the gap between technology and the real world involved Air Surface. It uses Machine Learning methods and haar cascades to map out hand gestures that are input through a webcam into surface controls, similar to how humans interact with the world. Think of turning a knob or flicking a switch without touching any surface naturally and controlling the lights in the room. This project can be paired with Augmented Reality systems to create a fully digital i/o environment.
   </h3>
 
 </div>
