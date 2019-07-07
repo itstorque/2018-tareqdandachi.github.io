@@ -11,7 +11,7 @@ script: lazy
   <h3 class="huge title dark slideInFromLeft">I am a Full-Stack Developer, UI-Designer and a Biomechatronics Engineer. I am currently a student at MIT, majoring in Electrical Engineering, Computer Science and Mechanical Engineering with a concentration in Biomechanics and Biomedical Devices.</h3>
 
   <div class="right_align">
-    <a target="\_blank" href="/uploads/resume.pdf" class="tight"><span class="highlight_on_hover white"><img src="/resources/images/file.svg"> Download my resume</span></a>
+    <a target="\_blank" href="/resources/resume.pdf" class="tight"><span class="highlight_on_hover white"><img src="/resources/images/file.svg"> Download my resume</span></a>
   </div>
 
 </div>
