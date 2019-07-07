@@ -9,7 +9,16 @@ script:
 
   {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
-  <div id="cbs" data-tags="ui web java php js design intern">
+  <label for="domain">Domain</label>
+  <select id="domain">
+    <option value="">all</option>
+    <option value="cs">Computer Science</option>
+    <option value="design">Design</option>
+    <option value="ee">Electrical Engineering</option>
+    <option value="bio">Biomedical</option>
+  </select>
+
+  <div id="cbs" data-tags="ui web java php js design intern cs">
 
     {%- include picture.html img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
 
@@ -46,7 +55,7 @@ script:
 
   </div>
 
-  <div id="at" data-tags="bio ui web php js">
+  <div id="at" data-tags="bio ui web php js cs design">
 
     {%- include picture.html img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
 
@@ -83,7 +92,7 @@ script:
 
   </div>
 
-  <div id="nyhack" data-tags="hackathon bio ai app">
+  <div id="nyhack" data-tags="hackathon bio ai app cs">
 
     {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
 
@@ -116,7 +125,7 @@ script:
 
   </div>
 
-  <div id="thetech" data-tags="ruby coffee js haml ui web">
+  <div id="thetech" data-tags="ruby coffee js haml ui web cs design">
 
     {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
@@ -155,7 +164,7 @@ script:
 
   </div>
 
-  <div id="fliplearn" data-tags="ai ui web app vision edu">
+  <div id="fliplearn" data-tags="ai ui web app vision edu cs design">
 
     {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
@@ -199,7 +208,7 @@ script:
 
   </div>
 
-  <div id="space" data-tags="ar ai ui app vision edu swift cpp objc">
+  <div id="space" data-tags="ar ai ui app vision edu swift cpp objc cs design">
 
     {%- include picture.html img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
 
@@ -234,7 +243,7 @@ script:
 
   </div>
 
-  <div id="aus" data-tags="bio ee py cpp">
+  <div id="aus" data-tags="bio ee py cpp cs">
 
     {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
@@ -278,7 +287,7 @@ script:
 
   </div>
 
-  <div id="vmas" data-tags="bio ee py ai cpp">
+  <div id="vmas" data-tags="bio ee py ai cpp cs">
 
     {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
@@ -313,7 +322,7 @@ script:
 
   </div>
 
-  <div id="roboarm" data-tags="bio ee py ai robot cpp">
+  <div id="roboarm" data-tags="bio ee py ai robot cpp cs">
 
     {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
@@ -349,7 +358,7 @@ script:
 
   </div>
 
-  <div id="airsurface" data-tags="py ai swift objc cpp">
+  <div id="airsurface" data-tags="py ai swift objc cpp cs">
 
     {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 
