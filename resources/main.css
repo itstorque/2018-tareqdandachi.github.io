@@ -331,6 +331,8 @@ img.portrait {
   height: 80vh;
   max-height: 700px;
 
+  min-height: 48vw;
+
   margin: 7vh 10%;
 
   object-fit: contain;
