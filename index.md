@@ -21,39 +21,6 @@ layout: default
   <img src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of Tareq El Dandachi">
 </noscript>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");
-  var lazyloadThrottleTimeout;
-
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }
-
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-              img.style.display = "block";
-            }
-        });
-        if(lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 20);
-  }
-
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});
-</script>
-
 <div class="layout">
 
   <h2 class="pretitle">About</h2>
@@ -68,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     I am a high-spirited, curious sophomore at MIT, which attracts me to not only participate in, but also organise lots of hackathons. My passion for tinkering around always leads me to foolishly try unexplored challenging ideas. It also makes me a huge proponent of using interdisciplinary approaches to solve problems, thereby my choice of majors. The idea of integrating different fields of study appeals to my curiosity and drives me to think out of the 📦.
   </h3>
 
-  {%- include picture.html img="dome" alt="MIT Dome as seen from Killian Court." -%}
+  {%- include picture_lazy.html img="dome" alt="MIT Dome as seen from Killian Court." -%}
 
   <div class="separator"></div>
 
@@ -102,3 +69,37 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");
+  var lazyloadThrottleTimeout;
+
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }
+
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              if (img.dataset.srcset){ img.srcset = img.dataset.srcset; }
+              img.classList.remove('lazy');
+              img.style.display = "block";
+            }
+        });
+        if(lazyloadImages.length == 0) {
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+</script>
