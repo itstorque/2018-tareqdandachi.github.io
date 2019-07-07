@@ -28,6 +28,15 @@
                 render: function ($container, $newContent) {
                     $container.html($newContent);
                     $container.removeClass('out');
+
+                    let hash = window.location.hash;
+                    if (hash != "") {
+                      history.pushState("", document.title, window.location.pathname);
+                      $('html, body').animate({
+                          scrollTop: $(hash).offset().top+310
+                      }, 2000);
+                    }
+
                 }
             },
         }).data('smoothState');
