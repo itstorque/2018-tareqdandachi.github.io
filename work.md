@@ -1,6 +1,8 @@
 ---
 title: Work
 layout: default
+script:
+  - work
 ---
 
 <div class="layout">
@@ -25,14 +27,14 @@ layout: default
       </ul>
     </div>
     <div class="col">
-      <h2>Platform</h2>
+      <h2>Platforms</h2>
       <ul>
         <li>Web (Responsive)</li>
       </ul>
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #F5A623;" data-for-id="cbs_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #F5A623;" data-for-id="cbs_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work">
     go to <a target="\_blank" href="http://cbs.com.lb" style="color: #F5A623;">cbs.com.lb</a>
@@ -58,14 +60,14 @@ layout: default
       </ul>
     </div>
     <div class="col">
-      <h2>Platform</h2>
+      <h2>Platforms</h2>
       <ul>
         <li>Web (Responsive)</li>
       </ul>
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #FF6699;" data-for-id="at_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #FF6699;" data-for-id="at_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work">
     go to <a target="\_blank" href="http://assistivetech.mit.edu" style="color: #FF6699;">assistivetech.mit.edu</a>
@@ -93,14 +95,14 @@ layout: default
       </ul>
     </div>
     <div class="col">
-      <h2>Platform</h2>
+      <h2>Platforms</h2>
       <ul>
         <li>Web (Responsive)</li>
       </ul>
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #993333;" data-for-id="thetech_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #993333;" data-for-id="thetech_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work">
     go to <a target="\_blank" href="http://thetech.com" style="color: #993333;">thetech.com</a>
@@ -140,7 +142,7 @@ layout: default
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #00DEFF;" data-for-id="fliplearn_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #00DEFF;" data-for-id="fliplearn_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work"></p>
 
@@ -166,14 +168,14 @@ layout: default
       </ul>
     </div>
     <div class="col">
-      <h2>Platform</h2>
+      <h2>Platforms</h2>
       <ul>
         <li>iOS</li>
       </ul>
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #4CD964;" data-for-id="space_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #4CD964;" data-for-id="space_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work"></p>
 
@@ -191,16 +193,17 @@ layout: default
     </ol>
   </h3>
 
-  <div class="work hidden_desc" id="space_extra">
+  <div class="work hidden_desc" id="aus_extra">
     <div class="col">
       <h2>Programming Languages</h2>
       <ul>
         <li>Python</li>
         <li>C++</li>
+        <li>AppleScript</li>
       </ul>
     </div>
     <div class="col">
-      <h2>Platform</h2>
+      <h2>Platforms</h2>
       <ul>
         <li>Laptop</li>
         <li>Raspberry Pi</li>
@@ -210,7 +213,7 @@ layout: default
     </div>
   </div>
 
-  <p class="work more_info"><a style="color: #FF7E7A;" data-for-id="space_extra" class="more_info_button">Show Technical Information</a></p>
+  <p class="work more_info"><span style="color: #FF7E7A;" data-for-id="aus_extra" class="more_info_button">Show Technical Information</span></p>
 
   <p class="work"></p>
 
@@ -245,9 +248,5 @@ layout: default
   <h3 class="work">
     LIPSUM
   </h3>
-
-
-
-  <script src="/resources/js/work.js"></script>
 
 </div>

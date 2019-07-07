@@ -68,6 +68,9 @@
     <script src="https://cdn.jsdelivr.net/npm/smoothstate@0.7.2/src/jquery.smoothState.min.js"></script>
     <script src="/resources/js/contact.js"></script>
     <script src="/resources/js/page_delegate.js"></script>
+    {% for item in page.script %}
+        <script src="/resources/js/{{item}}.js"></script>
+    {% endfor %}
 
 </body>
 </html>
