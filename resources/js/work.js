@@ -34,21 +34,25 @@ $("#submit-query").click(function(){
 
       for (i = 0; i < inputs.length; i++) {
 
-        let val = document.getElementById(inputs[i]).value;
+        let val = " " + document.getElementById(inputs[i]).value + " ";
 
-        tags = $(list_items[j]).attr('data-tags');
+        if (val != "  ") {
 
-        if (!tags.includes(val)) {doesConform=false}
+          tags = " " + $(list_items[j]).attr('data-tags') + " ";
+
+          if (!tags.includes(val)) {doesConform=false}
+
+        }
 
       }
 
       if (doesConform) {
 
-        list_items[j].style.backgroundColor = "red";
+        list_items[j].style.maxHeight = "200vh";
 
       } else {
 
-        list_items[j].style.backgroundColor = "white";
+        list_items[j].style.maxHeight = "0px";
 
       }
 
