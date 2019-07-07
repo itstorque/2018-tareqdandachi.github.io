@@ -75,6 +75,16 @@ script:
 
   <div class="separator"></div>
 
+  {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
+
+  <h3 class="pretitle">Spirometer, Respirometer and Lung Health — 2018</h3>
+
+  <h3 class="work">
+    During the NY MIT Medical Hackathon, I worked with a team of brilliant engineers from Georgia Tech and Carnegie Mellon to build a decentralised lung health diagnosis and analysis system. One of my primary roles was developing a phone app that took in barometer and microphone input from an iPhone (without any exterior devices or input) and calculate important information about lungs that usually need expensive and inaccessible devices to measure. It can calculate the Lung Vital Capacity, percentage Oxygen and CO<sub>2</sub> and many other metrics thought to be impossible to calculate before. Then with a Machine Learning Classifier, we would be able to predict lung health and the occurence of a lung disease (such as lung cancer) at a very early stage. The reason we focused on Lung Cancer is that it has become the most common cancer and over 57% of the cases are metastatic when first diagnosed. With more data, our app could possibly predict Stage 0 or 1 lung cancer and increase the survival rate from 5% to over 98%.
+  </h3>
+
+  <div class="separator"></div>
+
   {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
   <h3 class="pretitle">The Tech MIT — 2018-2019</h3>
@@ -246,7 +256,7 @@ script:
   <h3 class="pretitle">Air Surface — 2017</h3>
 
   <h3 class="work">
-    One of my projects on Human-Computer Interfaces, blending the gap between technology and the real world involved Air Surface. It uses Machine Learning methods and haar cascades to map out hand gestures that are input through a webcam into surface controls, similar to how humans interact with the world. Think of turning a knob or flicking a switch without touching any surface naturally and controlling the lights in the room. This project can be paired with Augmented Reality systems to create a fully digital i/o environment.
+    One of my projects on Human-Computer Interfaces, blending the gap between technology and the real world involved Air Surface. It uses Machine Learning methods and haar cascades to map out hand gestures that are seen through a webcam into surface controls, similar to how humans interact with the world. Think of turning a knob or flicking a switch without touching any surface naturally and controlling the lights in the room. This project can be paired with Augmented Reality systems to create a fully digital i/o environment.
   </h3>
 
 </div>
