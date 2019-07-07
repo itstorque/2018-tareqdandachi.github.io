@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+script: lazy
 ---
 
 <div class="layout">
@@ -15,7 +16,7 @@ layout: default
 
 </div>
 
-<img data-src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of Tareq El Dandachi" style="display: none;">
+<img data-src="/resources/images/portrait.jpg" class="portrait lazy lazy-phone" alt="Picture of Tareq El Dandachi" style="display: none;">
 
 <noscript>
   <img src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of Tareq El Dandachi">
@@ -69,37 +70,3 @@ layout: default
   </div>
 
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");
-  var lazyloadThrottleTimeout;
-
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }
-
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              if (img.dataset.srcset){ img.srcset = img.dataset.srcset; }
-              img.classList.remove('lazy');
-              img.style.display = "block";
-            }
-        });
-        if(lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 20);
-  }
-
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});
-</script>
