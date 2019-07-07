@@ -15,10 +15,10 @@ layout: default
 
 </div>
 
-<img data-src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of me" style="display: none;">
+<img data-src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of Tareq El Dandachi" style="display: none;">
 
 <noscript>
-  <img src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of me">
+  <img src="/resources/images/portrait.jpg" class="portrait lazy" alt="Picture of Tareq El Dandachi">
 </noscript>
 
 <script>
