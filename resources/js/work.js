@@ -20,13 +20,31 @@ $(".more_info_button").click(function(){
 
 // Handling Ordering & Filtering List
 
-let inputs = ['domain', 'lang'];
+let inputs = ['domain', 'lang', 'platform'];
 
 let list_items = $(".work-item");
 
-$("#submit-query").click(function(){
+$("select").change(function(){
 
-    console.log("submit");
+  var values = [];
+
+    for (i = 0; i < inputs.length; i++) {
+
+      let val = " " + document.getElementById(inputs[i]).value + " ";
+
+      if (val != "  ") {
+
+        document.getElementById(inputs[i]).parentElement.classList.add("active-search")
+
+      } else {
+
+        document.getElementById(inputs[i]).parentElement.classList.remove("active-search")
+
+      }
+
+      values.push(val)
+
+    }
 
     for (j = 0; j < list_items.length; j++) {
 
@@ -34,7 +52,7 @@ $("#submit-query").click(function(){
 
       for (i = 0; i < inputs.length; i++) {
 
-        let val = " " + document.getElementById(inputs[i]).value + " ";
+        let val = values[i];
 
         if (val != "  ") {
 

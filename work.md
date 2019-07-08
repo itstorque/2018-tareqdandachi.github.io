@@ -9,31 +9,62 @@ script:
 
   {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
-  <label for="domain">Domain</label>
-  <select id="domain">
-    <option value="">all</option>
-    <option value="cs">Computer Science</option>
-    <option value="design">Design</option>
-    <option value="ee">Electrical Engineering</option>
-    <option value="bio">Biomedical</option>
-  </select>
+  <div class="search">
 
-  <label for="lang">Language</label>
-  <select id="lang">
-    <option value="">any</option>
-    <option value="py">Python</option>
-    <option value="cpp">C++</option>
-    <option value="objc">Objective-C</option>
-    <option value="swift">Swift</option>
-    <option value="as">AppleScript</option>
-    <option value="java">Java</option>
-    <option value="php">PHP</option>
-    <option value="js">JavaScript</option>
-    <option value="ruby">Ruby</option>
-    <option value="coffee">CoffeeScript</option>
-  </select>
+    <div class="search-item">
+      <label for="domain">Domain</label>
+      <div class="select">
+        <select id="domain">
+          <option value="">All</option>
+          <option value="cs">Computer Science</option>
+          <option value="design">Design</option>
+          <option value="ee">Electrical Engineering</option>
+          <option value="bio">Biomedical</option>
+          <option value="ai">Artificial intelligence</option>
+          <option value="ar">Augmented Reality</option>
+        </select>
+      </div>
+    </div>
 
-  <p id="submit-query">Filter</p>
+    <div class="search-item">
+      <label for="lang">Language</label>
+      <div class="select">
+        <select id="lang">
+          <option value="">Any</option>
+          <option value="py">Python</option>
+          <option value="cpp">C++</option>
+          <option value="objc">Objective-C</option>
+          <option value="swift">Swift</option>
+          <option value="as">AppleScript</option>
+          <option value="java">Java</option>
+          <option value="php">PHP</option>
+          <option value="js">JavaScript</option>
+          <option value="ruby">Ruby</option>
+          <option value="coffee">CoffeeScript</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-item">
+      <label for="platform">Platform</label>
+      <div class="select">
+        <select id="platform">
+          <option value="">Any</option>
+          <option value="macos">MacOS</option>
+          <option value="linux">Linux</option>
+          <option value="arduino">Arduino</option>
+          <option value="app">iOS</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+  <!--<label for="keyword">Keyword Search</label>
+  <input id="keyword">
+
+  <p id="submit-search">Search</p>-->
 
   <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 
@@ -289,7 +320,7 @@ script:
         <ul>
           <li>MacOS</li>
           <li>Linux on Raspberry Pi</li>
-          <li>Ardiuno</li>
+          <li>Arduino</li>
           <li>Circuits</li>
         </ul>
       </div>
@@ -327,7 +358,7 @@ script:
         <h2>Platforms</h2>
         <ul>
           <li>Linux on Raspberry Pi</li>
-          <li>Ardiuno</li>
+          <li>Arduino</li>
         </ul>
       </div>
     </div>
@@ -362,7 +393,7 @@ script:
         <h2>Platforms</h2>
         <ul>
           <li>Linux on EV3</li>
-          <li>Ardiuno</li>
+          <li>Arduino</li>
           <li>EEG</li>
         </ul>
       </div>
