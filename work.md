@@ -84,7 +84,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
+    {%- include picture_lazy_work.html color1="#F5A623" color2="#202124" img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
 
     <h3 class="pretitle">Project for CBS — 2019</h3>
 
@@ -121,7 +121,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
+    {%- include picture_lazy_work.html color1="#2B2D42" color2="#77FFDC" img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
 
     <h3 class="pretitle">Spirometer, Respirometer and Lung Health — 2018</h3>
 
@@ -154,7 +154,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
+    {%- include picture_lazy_work.html color1="#33CCFF" color2="#3E098D" img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
 
     <h3 class="pretitle">Assistive Technology MIT — 2018-2019</h3>
 
@@ -191,7 +191,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
+    {%- include picture_lazy_work.html color1="#202124" color2="#993333" img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
     <h3 class="pretitle">The Tech MIT — 2018-2019</h3>
 
@@ -230,7 +230,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
+    {%- include picture_lazy_work.html color1="#FFC312" color2="#00DEFF" img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
     <h3 class="pretitle">FlipLearn — 2018</h3>
 
@@ -274,7 +274,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
+    {%- include picture_lazy_work.html color1="#13005B" color2="#000120" img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
 
     <h3 class="pretitle">Augmented Reality and Education - 2019</h3>
 
@@ -309,7 +309,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
+    {%- include picture_lazy_work.html color1="#FF7E7A" color2="#16214D" img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
     <h3 class="pretitle">Multi-Purpose Assistive Glasses - 2018</h3>
 
@@ -353,7 +353,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
+    {%- include picture_lazy_work.html color1="#FFC857" color2="#BDD9BF" img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
     <h3 class="pretitle">Vestibular Migraine Auditory Suppressant (VMAS) - 2018</h3>
 
@@ -388,7 +388,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
+    {%- include picture_lazy_work.html color1="#66D7D1" color2="#FC7753" img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
     <h3 class="pretitle">Unintrusive Bionic Arm — 2017-2018</h3>
 
@@ -424,7 +424,7 @@ script:
 
     <div class="separator"></div>
 
-    {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
+    {%- include picture_lazy_work.html color1="#B0B8FC" color2="#97E5FF" img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 
     <h3 class="pretitle">Air Surface — 2017</h3>
 

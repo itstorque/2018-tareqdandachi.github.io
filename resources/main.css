@@ -345,7 +345,7 @@ img.portrait {
 
 }
 
-img.picture {
+.picture {
 
   width: 90%;
   max-height: 80vh;
@@ -358,7 +358,7 @@ img.picture {
 
 }
 
-img.picture.work_banner {
+.picture.work_banner {
 
   min-height: auto;
 
@@ -1567,13 +1567,13 @@ tr > td:last-of-type {
 
   }
 
-  img.picture {
+  .picture {
 
     min-height: 50vw;
 
   }
 
-  img.picture.work_banner {
+  .picture.work_banner {
 
     min-height: auto;
 
