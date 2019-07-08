@@ -1856,3 +1856,34 @@ img.work_banner.below {
   transform: translateY(100vh);/* skewY(-20deg);*/
 
 }
+
+/* Strictly for Detail Page */
+
+h1.detail-page {
+
+  font-size: 3em;
+  font-weight: 300;
+
+  margin-left: 20px;
+
+}
+
+h1.detail-page::before {
+
+  content: "MY EXPERIENCE IN";
+  font-size: 0.4em;
+  color: var(--pop);
+  display: block;
+
+  margin: 4em 0 -0.3em 3px;
+
+}
+
+/* Responsive for Detail Page */
+
+@media screen and (min-width: 1000px) {
+
+  h1.detail-page { font-size: 2em; }
+  h1.detail-page::before { font-size: 0.3em; }
+
+}
