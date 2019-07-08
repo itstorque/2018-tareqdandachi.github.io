@@ -72,6 +72,7 @@ script:
     </div>
     <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
   </div>
+  <p class="work more_info">These are a couple of my projects that I thought were worth highlighting. If you would like to know about more projects in a certain field, feel free to contact me!</p><br>
   <p class="work more_info"><span class="search-button" id="toggleSearch">Show Search</span></p>
   <p class="work"><span class="search-button" onClick="clearSearch()" id="clearSearch">Clear Search</span></p>
 
