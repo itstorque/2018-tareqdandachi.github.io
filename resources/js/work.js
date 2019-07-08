@@ -1,7 +1,7 @@
 // Handling More Info Button Click
 
 $(".more_info_button").click(function(){
-  // Holds the product ID of the clicked element
+
   var desc_id = $(this).attr('data-for-id')
 
   $("#"+desc_id).toggleClass("hidden_desc");
@@ -24,20 +24,13 @@ const inputs = ['domain', 'lang', 'platform'];
 
 const list_items = $(".work-item");
 
-let hidden_select = []
-
-let hidden_search = []
-
 let numberItems = list_items.length
 
+let hidden_select = Array(numberItems).fill(false)
+
+let hidden_search = Array(numberItems).fill(false)
+
 numberShownUpdate(numberItems)
-
-for (i = 0; i < numberItems; i++) {
-
-  hidden_select.push(false)
-  hidden_search.push(false)
-
-}
 
 $("select").change(function(){
 
@@ -144,5 +137,46 @@ function numberShownUpdate(numberShown) {
   if (numberShown == 0) { string = numberShown + " item" }
 
   span.appendChild(document.createTextNode(string));
+
+}
+
+// Clear all Search items
+
+function clearSearch() {
+
+  $(':input').val('');
+  $(':input').parent().removeClass("active-search");
+
+  hidden_select = Array(numberItems).fill(false)
+  hidden_search = Array(numberItems).fill(false)
+
+  processHides()
+
+}
+
+// Show/Hide the Search Items
+
+$("#toggleSearch").click(function(){
+
+  clearSearch()
+  toggleSearch()
+
+});
+
+function toggleSearch() {
+
+  if ($("#toggleSearch").html() == "Show Search") {
+
+    $("#toggleSearch").html("Hide Search")
+
+    $("#search").css("max-height", "100vh")
+
+  } else {
+
+    $("#toggleSearch").html("Show Search")
+
+    $("#search").css("max-height", "0px")
+
+  }
 
 }

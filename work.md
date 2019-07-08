@@ -9,66 +9,71 @@ script:
 
   {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
-  <div class="search">
+  <div id="search">
 
-    <div class="search-item">
-      <label for="domain">Domain</label>
-      <div class="select">
-        <select id="domain">
-          <option value="">All</option>
-          <option value="cs">Computer Science</option>
-          <option value="design">Design</option>
-          <option value="ee">Electrical Engineering</option>
-          <option value="bio">Biomedical</option>
-          <option value="ai">Artificial intelligence</option>
-          <option value="ar">Augmented Reality</option>
-        </select>
+    <div class="search">
+
+      <div class="search-item">
+        <label for="domain">Domain</label>
+        <div class="select">
+          <select id="domain">
+            <option value="">All</option>
+            <option value="cs">Computer Science</option>
+            <option value="design">Design</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="bio">Biomedical</option>
+            <option value="ai">Artificial intelligence</option>
+            <option value="ar">Augmented Reality</option>
+          </select>
+        </div>
       </div>
+
+      <div class="search-item">
+        <label for="lang">Language</label>
+        <div class="select">
+          <select id="lang">
+            <option value="">Any</option>
+            <option value="py">Python</option>
+            <option value="cpp">C++</option>
+            <option value="objc">Objective-C</option>
+            <option value="swift">Swift</option>
+            <option value="as">AppleScript</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="js">JavaScript</option>
+            <option value="ruby">Ruby</option>
+            <option value="coffee">CoffeeScript</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-item">
+        <label for="platform">Platform</label>
+        <div class="select">
+          <select id="platform">
+            <option value="">Any</option>
+            <option value="mac">MacOS</option>
+            <option value="linux">Linux</option>
+            <option value="arduino">Arduino</option>
+            <option value="app">iOS</option>
+            <option value="web">Web</option>
+            <option value="android">Android</option>
+          </select>
+        </div>
+      </div>
+
     </div>
 
-    <div class="search-item">
-      <label for="lang">Language</label>
-      <div class="select">
-        <select id="lang">
-          <option value="">Any</option>
-          <option value="py">Python</option>
-          <option value="cpp">C++</option>
-          <option value="objc">Objective-C</option>
-          <option value="swift">Swift</option>
-          <option value="as">AppleScript</option>
-          <option value="java">Java</option>
-          <option value="php">PHP</option>
-          <option value="js">JavaScript</option>
-          <option value="ruby">Ruby</option>
-          <option value="coffee">CoffeeScript</option>
-        </select>
+    <div class="search">
+      <div class="search-item">
+        <label for="keyword">Keyword Search</label>
+        <input id="keyword" type="text" placeholder="Search" required>
       </div>
     </div>
-
-    <div class="search-item">
-      <label for="platform">Platform</label>
-      <div class="select">
-        <select id="platform">
-          <option value="">Any</option>
-          <option value="mac">MacOS</option>
-          <option value="linux">Linux</option>
-          <option value="arduino">Arduino</option>
-          <option value="app">iOS</option>
-          <option value="web">Web</option>
-          <option value="android">Android</option>
-        </select>
-      </div>
-    </div>
-
+    <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
   </div>
-
-  <div class="search">
-    <div class="search-item">
-      <label for="keyword">Keyword Search</label>
-      <input id="keyword" type="text" placeholder="Search" required>
-    </div>
-  </div>
-  <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
+  <p class="work more_info"><span class="search-button" id="toggleSearch">Show Search</span></p>
+  <p class="work"><span class="search-button" onClick="clearSearch()">Clear Search</span></p>
 
   <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 

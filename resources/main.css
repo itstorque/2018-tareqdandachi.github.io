@@ -538,11 +538,33 @@ label {
 
 }
 
+#search {
+
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s linear;
+
+}
+
 .search {
 
   display: grid;
 
   grid-template-columns: 100%;
+
+}
+
+.search-button {
+
+  color: var(--pop);
+  transition: 0.2s;
+  cursor: pointer;
+
+}
+
+.search-button:hover {
+
+  color: black;
 
 }
 
@@ -1819,31 +1841,4 @@ img.work_banner.below {
 
   transform: translateY(100vh);/* skewY(-20deg);*/
 
-}
-
-/* TEST */
-
-.placeholder{
-  display:inline-block;
-  width:800px;
-  height:600px;
-  box-sizing:border-box;
-  margin-top:40px;
-  position:relative;
-}
-
-.column, .blind, .blindImg{
-  position:absolute;
-  top:0;
-  height:100%;
-  box-sizing:border-box;
-}
-
-.blind{
-  overflow:hidden;
-}
-
-.blindImg{
-  width:100%;
-  background-size:cover;
 }
