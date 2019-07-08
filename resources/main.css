@@ -574,6 +574,13 @@ label {
 
 }
 
+#clearSearch {
+
+  transition: 0.2s;
+  opacity: 0;
+
+}
+
 div.work-item {
 
   max-height: 200vh;

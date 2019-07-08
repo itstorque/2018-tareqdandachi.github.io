@@ -171,11 +171,15 @@ function toggleSearch() {
 
     $("#search").css("max-height", "100vh")
 
+    $("#clearSearch").css("opacity", "1")
+
   } else {
 
     $("#toggleSearch").html("Show Search")
 
     $("#search").css("max-height", "0px")
+
+    $("#clearSearch").css("opacity", "0")
 
   }
 

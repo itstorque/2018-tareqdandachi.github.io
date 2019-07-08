@@ -73,7 +73,7 @@ script:
     <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
   </div>
   <p class="work more_info"><span class="search-button" id="toggleSearch">Show Search</span></p>
-  <p class="work"><span class="search-button" onClick="clearSearch()">Clear Search</span></p>
+  <p class="work"><span class="search-button" onClick="clearSearch()" id="clearSearch">Clear Search</span></p>
 
   <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 
