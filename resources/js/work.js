@@ -28,7 +28,11 @@ let hidden_select = []
 
 let hidden_search = []
 
-for (i = 0; i < list_items.length; i++) {
+let numberItems = list_items.length
+
+numberShownUpdate(numberItems)
+
+for (i = 0; i < numberItems; i++) {
 
   hidden_select.push(false)
   hidden_search.push(false)
@@ -57,7 +61,7 @@ $("select").change(function(){
 
     }
 
-    for (j = 0; j < list_items.length; j++) {
+    for (j = 0; j < numberItems; j++) {
 
       hidden_select[j] = false;
 
@@ -87,7 +91,7 @@ $("#keyword").keyup(function(){
 
   const val = $("#keyword").val().toLowerCase()
 
-  for (k = 0; k < list_items.length; k++) {
+  for (k = 0; k < numberItems; k++) {
 
     const text = list_items[k].getElementsByClassName('work')[0].innerText.toLowerCase()
 
@@ -103,7 +107,9 @@ $("#keyword").keyup(function(){
 
 function processHides() {
 
-  for (n = 0; n < list_items.length; n++) {
+  numberShown = 0
+
+  for (n = 0; n < numberItems; n++) {
 
     if (hidden_select[n] || hidden_search[n]) {
 
@@ -113,8 +119,30 @@ function processHides() {
 
       list_items[n].style.maxHeight = "200vh";
 
+      numberShown += 1
+
     }
 
   }
+
+  numberShownUpdate(numberShown)
+
+}
+
+function numberShownUpdate(numberShown) {
+
+  var span = document.getElementById('numberItemsShown');
+
+  while( span.firstChild ) {
+
+    span.removeChild( span.firstChild );
+
+  }
+
+  let string = numberShown + " items"
+
+  if (numberShown == 0) { string = numberShown + " item" }
+
+  span.appendChild(document.createTextNode(string));
 
 }

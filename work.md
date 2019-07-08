@@ -68,6 +68,7 @@ script:
       <input id="keyword" type="text" placeholder="Search" required>
     </div>
   </div>
+  <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
 
   <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 
