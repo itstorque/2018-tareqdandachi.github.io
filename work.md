@@ -113,6 +113,39 @@ script:
 
   </div>
 
+  <div id="nyhack" class="work-item" data-tags="hackathon bio ai app cs">
+
+    <div class="separator"></div>
+
+    {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
+
+    <h3 class="pretitle">Spirometer, Respirometer and Lung Health — 2018</h3>
+
+    <h3 class="work">
+      During the NY MIT Medical Hackathon, I worked with a team of brilliant engineers from Georgia Tech and Carnegie Mellon to build a decentralised lung health diagnosis and analysis system. One of my primary roles was developing a phone app that took in barometer and microphone input from an iPhone (without any exterior devices or input) and calculate important information about lungs that usually need expensive and inaccessible devices to measure. It can calculate the Lung Vital Capacity, percentage Oxygen and CO<sub>2</sub> and many other metrics thought to be impossible to calculate before. Then with a Machine Learning Classifier, we would be able to predict lung health and the occurence of a lung disease (such as lung cancer) at a very early stage. The reason we focused on Lung Cancer is that it has become the most common cancer and over 57% of the cases are metastatic when first diagnosed. With more data, our app could possibly predict Stage 0 or 1 lung cancer and increase the survival rate from 5% to over 98%.
+    </h3>
+
+    <div class="work hidden_desc" id="nyhack_extra">
+      <div class="col">
+        <h2>Programming Languages</h2>
+        <ul>
+          <li>Swift</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Platform</h2>
+        <ul>
+          <li>iOS - iPhone & iPad App</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="work more_info"><span style="color: #22BC8F;" data-for-id="nyhack_extra" class="more_info_button">Show Technical Information</span></p>
+
+    <p class="work"></p>
+
+  </div>
+
   <div id="at" class="work-item" data-tags="bio ui web php js cs design">
 
     <div class="separator"></div>
@@ -147,39 +180,6 @@ script:
     <p class="work">
       go to <a target="\_blank" href="http://assistivetech.mit.edu" style="color: #FF6699;">assistivetech.mit.edu</a>
     </p>
-
-  </div>
-
-  <div id="nyhack" class="work-item" data-tags="hackathon bio ai app cs">
-
-    <div class="separator"></div>
-
-    {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
-
-    <h3 class="pretitle">Spirometer, Respirometer and Lung Health — 2018</h3>
-
-    <h3 class="work">
-      During the NY MIT Medical Hackathon, I worked with a team of brilliant engineers from Georgia Tech and Carnegie Mellon to build a decentralised lung health diagnosis and analysis system. One of my primary roles was developing a phone app that took in barometer and microphone input from an iPhone (without any exterior devices or input) and calculate important information about lungs that usually need expensive and inaccessible devices to measure. It can calculate the Lung Vital Capacity, percentage Oxygen and CO<sub>2</sub> and many other metrics thought to be impossible to calculate before. Then with a Machine Learning Classifier, we would be able to predict lung health and the occurence of a lung disease (such as lung cancer) at a very early stage. The reason we focused on Lung Cancer is that it has become the most common cancer and over 57% of the cases are metastatic when first diagnosed. With more data, our app could possibly predict Stage 0 or 1 lung cancer and increase the survival rate from 5% to over 98%.
-    </h3>
-
-    <div class="work hidden_desc" id="nyhack_extra">
-      <div class="col">
-        <h2>Programming Languages</h2>
-        <ul>
-          <li>Swift</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h2>Platform</h2>
-        <ul>
-          <li>iOS - iPhone & iPad App</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="work more_info"><span style="color: #22BC8F;" data-for-id="nyhack_extra" class="more_info_button">Show Technical Information</span></p>
-
-    <p class="work"></p>
 
   </div>
 
