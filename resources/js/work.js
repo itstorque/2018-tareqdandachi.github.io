@@ -18,11 +18,22 @@ $(".more_info_button").click(function(){
 
 });
 
-// Handling Ordering & Filtering List
+// Handling Filtering List From Select Input
 
-let inputs = ['domain', 'lang', 'platform'];
+const inputs = ['domain', 'lang', 'platform'];
 
-let list_items = $(".work-item");
+const list_items = $(".work-item");
+
+let hidden_select = []
+
+let hidden_search = []
+
+for (i = 0; i < list_items.length; i++) {
+
+  hidden_select.push(false)
+  hidden_search.push(false)
+
+}
 
 $("select").change(function(){
 
@@ -30,7 +41,7 @@ $("select").change(function(){
 
     for (i = 0; i < inputs.length; i++) {
 
-      let val = " " + document.getElementById(inputs[i]).value + " ";
+      const val = " " + document.getElementById(inputs[i]).value + " ";
 
       if (val != "  ") {
 
@@ -48,32 +59,62 @@ $("select").change(function(){
 
     for (j = 0; j < list_items.length; j++) {
 
-      let doesConform = true;
+      hidden_select[j] = false;
 
       for (i = 0; i < inputs.length; i++) {
 
-        let val = values[i];
+        const val = values[i];
 
         if (val != "  ") {
 
           tags = " " + $(list_items[j]).attr('data-tags') + " ";
 
-          if (!tags.includes(val)) {doesConform=false}
+          if (!tags.includes(val)) {hidden_select[j]=true}
 
         }
 
       }
 
-      if (doesConform) {
+    }
 
-        list_items[j].style.maxHeight = "200vh";
+    processHides()
 
-      } else {
+});
 
-        list_items[j].style.maxHeight = "0px";
+// Handling Input and Filtering From Search
 
-      }
+$("#keyword").keyup(function(){
+
+  const val = $("#keyword").val().toLowerCase()
+
+  for (k = 0; k < list_items.length; k++) {
+
+    const text = list_items[k].getElementsByClassName('work')[0].innerText.toLowerCase()
+
+    if (text.includes(val)) {hidden_search[k]=false} else {hidden_search[k]=true}
+
+  }
+
+  processHides()
+
+});
+
+// Handle Hiding Non-Conforming Items
+
+function processHides() {
+
+  for (n = 0; n < list_items.length; n++) {
+
+    if (hidden_select[n] || hidden_search[n]) {
+
+      list_items[n].style.maxHeight = "0px";
+
+    } else {
+
+      list_items[n].style.maxHeight = "200vh";
 
     }
 
-});
+  }
+
+}

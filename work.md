@@ -50,21 +50,24 @@ script:
       <div class="select">
         <select id="platform">
           <option value="">Any</option>
-          <option value="macos">MacOS</option>
+          <option value="mac">MacOS</option>
           <option value="linux">Linux</option>
           <option value="arduino">Arduino</option>
           <option value="app">iOS</option>
           <option value="web">Web</option>
+          <option value="android">Android</option>
         </select>
       </div>
     </div>
 
   </div>
 
-  <!--<label for="keyword">Keyword Search</label>
-  <input id="keyword">
-
-  <p id="submit-search">Search</p>-->
+  <div class="search">
+    <div class="search-item">
+      <label for="keyword">Keyword Search</label>
+      <input id="keyword" type="text" placeholder="Search" required>
+    </div>
+  </div>
 
   <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
 
@@ -212,7 +215,7 @@ script:
 
   </div>
 
-  <div id="fliplearn" class="work-item" data-tags="ai ui web app vision edu cs design">
+  <div id="fliplearn" class="work-item" data-tags="ai ui web app vision edu cs design android">
 
     {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
@@ -291,7 +294,7 @@ script:
 
   </div>
 
-  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc">
+  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc mac arduino">
 
     {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
@@ -321,7 +324,6 @@ script:
           <li>MacOS</li>
           <li>Linux on Raspberry Pi</li>
           <li>Arduino</li>
-          <li>Circuits</li>
         </ul>
       </div>
     </div>
@@ -336,7 +338,7 @@ script:
 
   </div>
 
-  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs">
+  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs arduino">
 
     {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
@@ -371,7 +373,7 @@ script:
 
   </div>
 
-  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs">
+  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs arduino">
 
     {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
@@ -407,7 +409,7 @@ script:
 
   </div>
 
-  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as">
+  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as mac">
 
     {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 

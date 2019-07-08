@@ -468,14 +468,14 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 90%;
-  line-height: 3;
+  line-height: 55px;
   background: #fff;
   overflow: hidden;
   margin: 0 5% 20px 5%;
   border-radius: 5px;
   border: 1px solid #ccc;
-  padding: 17px 14px
+  padding: 17px 14px;
+  transition: 0.4s;
 }
 
 .select::after {
@@ -483,7 +483,7 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0 1em;
+  padding: 0 1.5em;
   background: #fff;
   cursor: pointer;
   pointer-events: none;
@@ -504,6 +504,30 @@ select::-ms-expand {
 
 .active-search.select::after {
   color: var(--pop);
+}
+
+input {
+
+  position: relative;
+  display: block;
+  width: 90%;
+  line-height: 3;
+  background: #fff;
+  margin: 0 5% 20px 5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 17px 14px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1em;
+
+}
+
+input:valid {
+
+  border: 1px solid var(--pop);
+
 }
 
 label {
@@ -1471,6 +1495,14 @@ tr > td:last-of-type {
 
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 5%;
+
+  }
+
+  input {
+
+    font-size: 20px;
+    width: 90%;
+    padding: 0px 24px;
 
   }
 
