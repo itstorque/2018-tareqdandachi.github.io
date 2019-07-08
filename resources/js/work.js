@@ -184,3 +184,6 @@ function toggleSearch() {
   }
 
 }
+
+const observer = lozad();
+observer.observe();
