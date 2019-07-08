@@ -305,7 +305,7 @@ script:
 
   </div>
 
-  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc mac arduino">
+  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc mac arduino linux">
 
     <div class="separator"></div>
 
@@ -349,7 +349,7 @@ script:
 
   </div>
 
-  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs arduino">
+  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs arduino linux">
 
     <div class="separator"></div>
 
@@ -384,7 +384,7 @@ script:
 
   </div>
 
-  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs arduino">
+  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs arduino linux">
 
     <div class="separator"></div>
 
@@ -420,7 +420,7 @@ script:
 
   </div>
 
-  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as mac">
+  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as mac linux">
 
     <div class="separator"></div>
 
