@@ -9,7 +9,76 @@ script:
 
   {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
-  <div id="cbs" data-tags="ui web java php js design intern">
+  <div id="search">
+
+    <div class="search">
+
+      <div class="search-item">
+        <label for="domain">Domain</label>
+        <div class="select">
+          <select id="domain">
+            <option value="">All</option>
+            <option value="cs">Computer Science</option>
+            <option value="design">Design</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="bio">Biomedical</option>
+            <option value="ai">Artificial intelligence</option>
+            <option value="ar">Augmented Reality</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-item">
+        <label for="lang">Language</label>
+        <div class="select">
+          <select id="lang">
+            <option value="">Any</option>
+            <option value="py">Python</option>
+            <option value="cpp">C++</option>
+            <option value="objc">Objective-C</option>
+            <option value="swift">Swift</option>
+            <option value="as">AppleScript</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="js">JavaScript</option>
+            <option value="ruby">Ruby</option>
+            <option value="coffee">CoffeeScript</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-item">
+        <label for="platform">Platform</label>
+        <div class="select">
+          <select id="platform">
+            <option value="">Any</option>
+            <option value="mac">MacOS</option>
+            <option value="linux">Linux</option>
+            <option value="arduino">Arduino</option>
+            <option value="app">iOS</option>
+            <option value="web">Web</option>
+            <option value="android">Android</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="search">
+      <div class="search-item">
+        <label for="keyword">Keyword Search</label>
+        <input id="keyword" type="text" placeholder="Search" required>
+      </div>
+    </div>
+    <center><label><span id="numberItemsShown">int items</span> match your search query</label></center>
+  </div>
+  <p class="work more_info">These are a couple of my projects that I thought were worth highlighting. If you would like to know about more projects in a certain field, feel free to contact me!</p><br>
+  <p class="work more_info"><span class="search-button" id="toggleSearch">Show Search</span></p>
+  <p class="work"><span class="search-button" onClick="clearSearch()" id="clearSearch">Clear Search</span></p>
+
+  <div id="cbs" class="work-item" data-tags="ui web java php js design intern cs">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/cbs" alt="Picture of the CBS website on both mobile and desktop." -%}
 
@@ -42,11 +111,11 @@ script:
       go to <a target="\_blank" href="http://cbs.com.lb" style="color: #F5A623;">cbs.com.lb</a>
     </p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="at" data-tags="bio ui web php js">
+  <div id="at" class="work-item" data-tags="bio ui web php js cs design">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/at" alt="Picture of the Assitive Technology at MIT website on desktop on the left and a picture of the ATHack logo on the right." -%}
 
@@ -79,11 +148,11 @@ script:
       go to <a target="\_blank" href="http://assistivetech.mit.edu" style="color: #FF6699;">assistivetech.mit.edu</a>
     </p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="nyhack" data-tags="hackathon bio ai app">
+  <div id="nyhack" class="work-item" data-tags="hackathon bio ai app cs">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/nyhack" alt="Person breathing air into phone on the left, an analysis of the data and healthy lung diagnosis on the right." -%}
 
@@ -112,11 +181,11 @@ script:
 
     <p class="work"></p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="thetech" data-tags="ruby coffee js haml ui web">
+  <div id="thetech" class="work-item" data-tags="ruby coffee js haml ui web cs design">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/thetech" alt="Picture of MIT The Tech's website on desktop on the left and a picture of the logo and a newspaper on the right." -%}
 
@@ -151,11 +220,11 @@ script:
       go to <a target="\_blank" href="http://thetech.com" style="color: #993333;">thetech.com</a>
     </p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="fliplearn" data-tags="ai ui web app vision edu">
+  <div id="fliplearn" class="work-item" data-tags="ai ui web app vision edu cs design android">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/fliplearn" alt="Three images of FlipLearn running on an iPad, a picture of Brainy (the mascot) and the FlipLearn Logo." -%}
 
@@ -195,11 +264,11 @@ script:
 
     <h3 class="note">the platform included a web-app for everyone, an iPad App for Students and both an Android and an iOS app for Teachers and Parents.</h3>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="space" data-tags="ar ai ui app vision edu swift cpp objc">
+  <div id="space" class="work-item" data-tags="ar ai ui app vision edu swift cpp objc cs design">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/space" alt="Images of the app on two iPads and four iPhones." -%}
 
@@ -230,11 +299,11 @@ script:
 
     <p class="work"></p>
 
-    <div class="separator" id="aus"></div>
-
   </div>
 
-  <div id="aus" data-tags="bio ee py cpp">
+  <div id="aus" class="work-item" data-tags="bio ee py cpp cs as objc mac arduino">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/aus" alt="A graphic that portrays a pair of glasses with attached technology that performs the functions described below." -%}
 
@@ -253,6 +322,7 @@ script:
         <h2>Programming Languages</h2>
         <ul>
           <li>Python</li>
+          <li>Objective-C</li>
           <li>C++</li>
           <li>AppleScript</li>
         </ul>
@@ -262,8 +332,7 @@ script:
         <ul>
           <li>MacOS</li>
           <li>Linux on Raspberry Pi</li>
-          <li>Ardiuno</li>
-          <li>Circuits</li>
+          <li>Arduino</li>
         </ul>
       </div>
     </div>
@@ -274,11 +343,11 @@ script:
 
     <h3 class="note">All of the included technology (excluding the glasses frame) cost less than $6 to build.</h3>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="vmas" data-tags="bio ee py ai cpp">
+  <div id="vmas" class="work-item" data-tags="bio ee py ai cpp cs arduino">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/vmas" alt="A graphic of a brain and a beanie that illustrate functions of VMAS." -%}
 
@@ -300,7 +369,7 @@ script:
         <h2>Platforms</h2>
         <ul>
           <li>Linux on Raspberry Pi</li>
-          <li>Ardiuno</li>
+          <li>Arduino</li>
         </ul>
       </div>
     </div>
@@ -309,11 +378,11 @@ script:
 
     <p class="work"></p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="roboarm" data-tags="bio ee py ai robot cpp">
+  <div id="roboarm" class="work-item" data-tags="bio ee py ai robot cpp cs arduino">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/roboarm" alt="A graphic of a human controlled arm on the left and an environment driven arm on the right." -%}
 
@@ -335,7 +404,7 @@ script:
         <h2>Platforms</h2>
         <ul>
           <li>Linux on EV3</li>
-          <li>Ardiuno</li>
+          <li>Arduino</li>
           <li>EEG</li>
         </ul>
       </div>
@@ -345,11 +414,11 @@ script:
 
     <p class="work"></p>
 
-    <div class="separator"></div>
-
   </div>
 
-  <div id="airsurface" data-tags="py ai swift objc cpp">
+  <div id="airsurface" class="work-item" data-tags="py ai swift objc cpp cs as mac">
+
+    <div class="separator"></div>
 
     {%- include picture.html img="work/airsurface" alt="A graphic of different controls (buttons, a slider and a knob) on the left. A camera lens on the right." -%}
 
