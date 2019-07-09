@@ -37,6 +37,9 @@
                       }, 2000);
                     }
 
+                    const observer = lozad();
+                    observer.observe();
+
                 }
             },
         }).data('smoothState');

@@ -8,8 +8,6 @@ script:
 
 <div class="layout">
 
-  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
   {%- include picture.html img="work" alt="The title 'MY WORK' with a phone over the letter R" extra_class="work_banner" -%}
 
 
