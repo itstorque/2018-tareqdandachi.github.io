@@ -130,51 +130,70 @@ a {
   text-decoration: none;
 
   color: inherit;
+  -webkit-transform-style: preserve-3d;
 
 }
 
 #navbar ul a span {
 
   padding: 5px 0.75em;
+  display: block;
 
-  -moz-box-shadow: inset 0px 0px 0px 0px var(--pop);
-  -webkit-box-shadow: inset 0px 0px 0px 0px var(--pop);
-  box-shadow: inset 0px 0px 0px 0px var(--pop);
-
-  transition: 0.3s ease;
+  transition: 0.2s;
+  -webkit-transform-style: preserve-3d;
 
 }
 
-#navbar ul a span {
+#navbar ul a span p { /* FIX THE Z-INDEX BUG */
 
-  animation: 0.2s ease-out 0s 1 navbar_selection;
-
-}
-
-@keyframes navbar_selection {
-
-  from {-moz-box-shadow: inset 300px 0px 0px 0px var(--pop); -webkit-box-shadow: inset 300px 0px 0px 0px var(--pop); box-shadow: inset 300px 0px 0px 0px var(--pop); color: white;}
-  to   {box-shadow: inset 0px 0px 0px 0px var(--pop); -webkit-box-shadow: inset 0px 0px 0px 0px var(--pop); box-shadow: inset 0px 0px 0px 0px var(--pop); color: black;}
+  z-index: 99;
+  transform: scale(1);
+  margin: 0px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
 }
 
-#navbar a span.selected {
+#navbar ul a span::before {
 
-  -moz-box-shadow: inset 0px 0px 0px 0px var(--pop);
-  -webkit-box-shadow: inset 0px 0px 0px 0px var(--pop);
-  box-shadow: inset 0px 0px 0px 0px var(--pop);
-  color: var(--pop);
+  content: "";
+  background-color: red;
+  display: block;
+  width: auto;
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 2.3em;
+  margin-bottom: -1.9em;
+
+  transition: 0.2s;
+  -webkit-backface-visibility: hidden;
+
+}
+
+#navbar ul a:hover span p {color: white;}
+#navbar ul a:hover span::before { transform: scaleX(1); }
+
+/*#navbar ul a span p { animation: 0.2s ease-out 0.2s 1 navbar_selection_1; }
+
+#navbar ul a span::before { animation: 0.2s ease-out 0.2s 1 navbar_selection_2; }
+
+@keyframes navbar_selection_1 {
+
+  0% {color: white;}
+  95%   {color: black;}
+  100%   {color: black;}
 
 }
 
-#navbar a:hover span {
+@keyframes navbar_selection_2 {
 
-  -moz-box-shadow: inset 100px 0px 0px 0px var(--pop);
-  -webkit-box-shadow: inset 100px 0px 0px 0px var(--pop);
-  box-shadow: inset 100px 0px 0px 0px var(--pop);
-  color: white;
+  0%    {transform: scaleX(1);-webkit-transform: translateZ(0) scaleX(1);}
+  95%   {transform: scaleX(0);-webkit-transform: translateZ(0) scaleX(0);}
+  100%  {transform: scaleX(0);-webkit-transform: translateZ(0) scaleX(0);}
 
-}
+}*/
+
+#navbar a span.selected { color: var(--pop); }
 
 footer {
 
@@ -923,32 +942,6 @@ p.button_or {
 
 }
 
-.pop.highlight_on_hover {
-
-  padding: 10px;
-
-  box-shadow: inset 0px 0px 0px 0px white;
-  -webkit-box-shadow: inset 0px 0px 0px 0px white;
-  -moz-box-shadow: inset 0px 0px 0px 0px white;
-
-  color: white;
-
-  transition: 0.2s;
-
-  cursor: pointer;
-
-}
-
-.pop.highlight_on_hover:hover {
-
-box-shadow: inset 30em 0px 0px 0px white;
--webkit-box-shadow: inset 30em 0px 0px 0px white;
--moz-box-shadow: inset 30em 0px 0px 0px white;
-
-  color: var(--pop);
-
-}
-
 .white.highlight_on_hover {
 
   padding: 10px;
@@ -1263,25 +1256,6 @@ tr > td:last-of-type {
 
   color: var(--teal);
   cursor: pointer;
-
-}
-
-/* IS-EXITING: ANIMATIONS */
-
-.is-exiting .card {
-
-  opacity: 0;
-  transform: scale(1.1);
-  transform-origin: center;
-
-}
-
-.is-exiting #navbar a span {
-
-  box-shadow: inset 300px 0px 0px 0px var(--pop);
-  -webkit-box-shadow: inset 300px 0px 0px 0px var(--pop);
-  -moz-box-shadow: inset 300px 0px 0px 0px var(--pop);
-  color: white;
 
 }
 
@@ -1820,15 +1794,8 @@ img.work_banner.below {
 
 /* On exit animations */
 
-.out #navbar ul a span {
-
-  -moz-box-shadow: inset 300px 0px 0px 0px var(--pop);
-  -webkit-box-shadow: inset 300px 0px 0px 0px var(--pop);
-  box-shadow: inset 300px 0px 0px 0px var(--pop);
-
-  color: white;
-
-}
+.out #navbar ul a span p { color: white; }
+.out #navbar a span::before { transform: scaleX(1);-webkit-transform: translateZ(0) scaleX(1); }
 
 .out #navbar .logo {
 
