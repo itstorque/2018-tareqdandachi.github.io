@@ -137,7 +137,6 @@ a {
 #navbar ul a span {
 
   padding: 5px 0.75em;
-  display: block;
 
   transition: 0.2s;
   -webkit-transform-style: preserve-3d;
