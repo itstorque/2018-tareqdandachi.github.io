@@ -63,6 +63,7 @@ a {
   font-weight: 500;
   margin-top: -0.8em;
   text-align: left;
+  margin-bottom: -50px;
 
 }
 
@@ -106,8 +107,15 @@ a {
   #main_content.detail {
 
     width: 74vw;
-    margin-left: 13vw;
+    margin-left: 14vw;
     font-size: 25px;
+    margin-top: 90px;
+
+  }
+
+  #main_content.detail h1 {
+
+    margin-bottom: 70px;
 
   }
 
@@ -138,7 +146,7 @@ a {
   #main_content.detail p {
 
     display: inline-block;
-    max-width: 40%;
+    max-width: 39%;
     vertical-align:top;
     margin-top: -10px;
     margin-left: 20px;
@@ -157,7 +165,7 @@ a {
 
   }
 
-  #main_content.detail img.right { width: 50%; }
+  #main_content.detail img.right { padding-right: 0; width: 50%; }
 
 }
 
