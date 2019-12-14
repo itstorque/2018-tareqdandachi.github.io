@@ -92,27 +92,49 @@ a {
   #main_content.detail .block {
 
     vertical-align:top;
+    margin-bottom: 300px;
 
   }
+
+  #main_content.detail .block h2 {
+
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 40px;
+
+  }
+
+  #main_content.detail .block h2.left {
+
+    margin-left: 50%;
+    padding-left: 1em;
+
+  }
+
+  #main_content.detail .left {margin-left: 5%;}
 
   #main_content.detail p {
 
     display: inline-block;
     max-width: 40%;
     vertical-align:top;
-    margin-top: -50px;
+    margin-top: -10px;
 
   }
 
   #main_content.detail img {
 
     display: inline-block;
-    width: 50%;
+    width: 48%;
+    padding-right: 2%;
     margin-top: -280px;
     vertical-align:top;
-    margin-left: 5%;
+    height: 700px;
+    object-fit: contain;
 
   }
+
+  #main_content.detail img.left { width: 50%; }
 
 }
 
