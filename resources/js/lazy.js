@@ -52,4 +52,6 @@ document.addEventListener("scroll", lazyload);
 window.addEventListener("resize", lazyload);
 window.addEventListener("orientationChange", lazyload);
 
+window.onscroll = function(){ lazyload() };
+
 if ($(window).height() > 630 || $(window).width() > 1000) { lazyload_onload(); }
